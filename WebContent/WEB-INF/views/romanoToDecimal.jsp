@@ -22,6 +22,12 @@
 	</div>
 
 	<br />
+	<marquee>
+		<b>NOME:</b> Ted Nicolas António Fernandes ----- <b>Contato:</b> +258
+		842913365 ----- <b>Email:</b> ted.fernandess@gmail.com
+	</marquee>
+
+	<br />
 	<c:import url="rodape.jsp"></c:import>
 
 </body>
