@@ -11,6 +11,7 @@ public class ConverteNumero {
 	}
 
 	private int converterNumeroRomano(String texto) {
+		// TODO Refatorar este método
 		int n = 0;
 		int numeroDaDireita = 0;
 		for (int i = texto.length() - 1; i >= 0; i--) {
