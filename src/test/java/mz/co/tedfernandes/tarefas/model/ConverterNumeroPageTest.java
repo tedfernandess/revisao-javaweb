@@ -77,4 +77,14 @@ public class ConverterNumeroPageTest {
 		
 	}
 	
+	@Test
+	public void deveAceitarConverterNumeroRomanoComEspacamentoNoInicioQueNaoRepresentaNada(){
+
+		this.numeroRomano.sendKeys("   d");
+		this.numeroRomano.submit();
+		boolean achouTexto = driver.getPageSource().contains("500");
+		Assert.assertTrue(achouTexto);
+		
+	}
+	
 }
