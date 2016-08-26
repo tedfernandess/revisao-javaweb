@@ -11,7 +11,7 @@
 	<div align="center">
 		
 		<div style="width: 750px" align="left">
-			<b>As regras para a conversão de romano para decimal:</b> <br /> <br />
+			<b><i>As regras para a conversão de romano para decimal:</i></b> <br /> <br />
 		</div>
 		
 		<div style="width: 750px">
