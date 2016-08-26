@@ -37,4 +37,14 @@ public class ConverterNumeroPageTest {
 		
 	}
 	
+	@Test
+	public void naoDeveConverterNumeroForaDosLimitesEstabelecidos(){
+
+		this.numeroRomano.sendKeys("MMMMCMXCIX");
+		this.numeroRomano.submit();
+		boolean achouTexto = driver.getPageSource().contains("Argumento Inválido");
+		Assert.assertTrue(achouTexto);
+		
+	}
+	
 }
