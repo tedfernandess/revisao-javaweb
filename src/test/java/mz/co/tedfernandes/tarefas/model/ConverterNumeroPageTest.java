@@ -106,4 +106,12 @@ public class ConverterNumeroPageTest {
 		
 	}
 	
+	@Test
+	public void deveInicializarPagina(){
+
+		boolean achouTexto = driver.getPageSource().contains("As regras");
+		Assert.assertTrue(achouTexto);
+		
+	}
+	
 }
