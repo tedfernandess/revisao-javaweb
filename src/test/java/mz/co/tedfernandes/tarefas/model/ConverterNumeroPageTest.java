@@ -87,4 +87,14 @@ public class ConverterNumeroPageTest {
 		
 	}
 	
+	@Test
+	public void deveAceitarConverterNumeroRomanoComEspacamentoNoInicioENoFimQueNaoRepresentaNada(){
+
+		this.numeroRomano.sendKeys("   l  ");
+		this.numeroRomano.submit();
+		boolean achouTexto = driver.getPageSource().contains("50");
+		Assert.assertTrue(achouTexto);
+		
+	}
+	
 }
