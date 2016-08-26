@@ -97,4 +97,13 @@ public class ConverterNumeroPageTest {
 		
 	}
 	
+	@Test
+	public void naoDeveConverterNumeroRomanoSemFormularioPreenchido(){
+
+		this.numeroRomano.submit();
+		boolean achouTexto = driver.getPageSource().contains("Argumento Inválido");
+		Assert.assertTrue(achouTexto);
+		
+	}
+	
 }
