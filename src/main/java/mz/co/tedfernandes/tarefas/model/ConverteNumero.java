@@ -2,7 +2,11 @@ package mz.co.tedfernandes.tarefas.model;
 
 public class ConverteNumero {
 
-	public int converterCaraterRomano(char letra) {
+	public int executaOperacao(String texto){
+		return this.converterNumeroRomano(texto);
+	}
+	
+	private int converterCaraterRomano(char letra) {
 		switch (letra) {
 		case 'I':
 			return 1;
@@ -25,7 +29,7 @@ public class ConverteNumero {
 		}
 	}
 
-	public int converterNumeroRomano(String texto) {
+	private int converterNumeroRomano(String texto) {
 		int n = 0;
 		int numeroDaDireita = 0;
 		for (int i = texto.length() - 1; i >= 0; i--) {

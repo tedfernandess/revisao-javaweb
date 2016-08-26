@@ -25,9 +25,10 @@ public class ConverteNumeroController {
 	public String converter(HttpServletRequest request, Model model) {
 		ConverteNumero converteNumero = new ConverteNumero();
 		String numeroRomano = request.getParameter("numeroRomano");
-		int resultado = converteNumero.converterNumeroRomano(numeroRomano);
+		int resultado = converteNumero.executaOperacao(numeroRomano);
 		model.addAttribute("resultado", resultado);
 		return "resultado";
 	}
+
 	
 }

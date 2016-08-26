@@ -10,22 +10,22 @@ public class ConverterNumeroTest {
 	@Test
 	public void deveConverterNumeroRomanoComUmCaraterValido(){
 		ConverteNumero converteNumero = new ConverteNumero();
-		char letra='M';
-		Assert.assertEquals(1000, converteNumero.converterCaraterRomano(letra));
+		String letra="M";
+		Assert.assertEquals(1000, converteNumero.executaOperacao(letra));
 	}
 	
 	@Test
 	public void naoDeveConverterNumeroRomanoComUmCaraterInvalido(){
 		ConverteNumero converteNumero = new ConverteNumero();
-		char letra='A';
-		Assert.assertEquals(0, converteNumero.converterCaraterRomano(letra));
+		String letra="A";
+		Assert.assertEquals(0, converteNumero.executaOperacao(letra));
 	}
 	
 	@Test
 	public void testarConversaoDoNumeroRomanoDentroDosLimitesEstabelecidos(){
 		ConverteNumero converteNumero = new ConverteNumero();
 		String texto="MMMCMXCIX";
-		Assert.assertEquals(3999, converteNumero.converterNumeroRomano(texto));
+		Assert.assertEquals(3999, converteNumero.executaOperacao(texto));
 	}
 	
 }
