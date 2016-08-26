@@ -8,9 +8,10 @@
 </head>
 <body>
 
-	<div align="center">
-		<hr />
-		Copyright ©2016 - Todos os direitos reservados
+	<hr />
+	<div align="center" style="background-color: lightblue;">
+		<b><u>Copyright ©2016 - Todos os direitos reservados</u></b>
+		<br/>
 	</div>
 
 </body>

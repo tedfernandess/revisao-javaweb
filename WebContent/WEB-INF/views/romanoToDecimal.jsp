@@ -16,7 +16,7 @@
 		<form action="converter" method="post">
 			<b>DIGITE O NÚMERO ROMANO:</b> <br /> <br />
 			<input type="text" name="numeroRomano" /> <br /><br/>
-			[Escala: I - MMMCMXCIX] <br /> <br />
+			<font color="green">[Escala: I - MMMCMXCIX]</font> <br /> <br />
 			<input	type="submit" value="Converter" />
 		</form>
 		<br />
