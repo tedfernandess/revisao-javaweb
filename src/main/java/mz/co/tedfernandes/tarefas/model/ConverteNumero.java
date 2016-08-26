@@ -36,7 +36,7 @@ public class ConverteNumero {
 			int valor = converterCaraterRomano(texto.charAt(i));
 
 			if (valor == 0) {
-				return 0;
+				throw new IllegalArgumentException();
 			}
 
 			if ((valor - numeroDaDireita) >= 0) {

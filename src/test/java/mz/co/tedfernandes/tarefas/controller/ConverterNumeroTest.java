@@ -18,11 +18,11 @@ public class ConverterNumeroTest {
 		Assert.assertEquals(1000, converteNumero.executaOperacao(letra));
 	}
 	
-	@Test
+	@Test(expected = IllegalArgumentException.class)
 	public void naoDeveConverterNumeroRomanoComUmCaraterInvalido(){
 		ConverteNumero converteNumero = new ConverteNumero();
-		String letra="A";
-		Assert.assertEquals(0, converteNumero.executaOperacao(letra));
+		String texto = "AAA";
+		converteNumero.executaOperacao(texto);
 	}
 	
 	@Test
