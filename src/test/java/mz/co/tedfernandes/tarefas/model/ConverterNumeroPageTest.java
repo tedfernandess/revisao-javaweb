@@ -47,4 +47,14 @@ public class ConverterNumeroPageTest {
 		
 	}
 	
+	@Test
+	public void naoDeveConverterNumeroRomanoComCaracteresQueNaoRepresentamNumerosRomanos(){
+
+		this.numeroRomano.sendKeys("MMMAIX");
+		this.numeroRomano.submit();
+		boolean achouTexto = driver.getPageSource().contains("Argumento Inválido");
+		Assert.assertTrue(achouTexto);
+		
+	}
+	
 }
