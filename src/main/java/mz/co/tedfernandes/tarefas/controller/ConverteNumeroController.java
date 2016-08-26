@@ -23,13 +23,17 @@ public class ConverteNumeroController {
 	}
 	
 	@RequestMapping("converter")
-	public String converter(HttpServletRequest request, Model model, BindException errors) {
+	public String converter(HttpServletRequest request, Model model) {
 		ConverteNumero converteNumero = new ConverteNumero();
 		String numeroRomano = request.getParameter("numeroRomano");
-		int resultado = converteNumero.executaOperacao(numeroRomano);
-		model.addAttribute("resultado", resultado);
+		try{
+			int resultado = converteNumero.executaOperacao(numeroRomano);
+			model.addAttribute("resultado", resultado);
+		}catch(IllegalArgumentException e){
+			e.getMessage();
+			model.addAttribute("resultado", "Argumento Inválido");
+		}
 		return "resultado";
 	}
-
 	
 }
