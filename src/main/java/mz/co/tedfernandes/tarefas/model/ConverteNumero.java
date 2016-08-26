@@ -1,4 +1,4 @@
-package mz.co.tedfernandes.tarefas.controller;
+package mz.co.tedfernandes.tarefas.model;
 
 public class ConverteNumero {
 

@@ -3,6 +3,8 @@ package mz.co.tedfernandes.tarefas.controller;
 import org.junit.Assert;
 import org.junit.Test;
 
+import mz.co.tedfernandes.tarefas.model.ConverteNumero;
+
 public class ConverterNumeroTest {
 
 	@Test
