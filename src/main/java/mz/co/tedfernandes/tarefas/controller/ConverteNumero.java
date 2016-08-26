@@ -26,8 +26,27 @@ public class ConverteNumero {
 	}
 
 	public int converterNumeroRomano(String texto) {
-		// TODO Auto-generated method stub
-		return 0;
+		int n = 0;
+		int numeroDaDireita = 0;
+		for (int i = texto.length() - 1; i >= 0; i--) {
+			int valor = converterCaraterRomano(texto.charAt(i));
+
+			if (valor == 0) {
+				return 0;
+			}
+
+			if ((valor - numeroDaDireita) > 0) {
+				n += valor;
+				numeroDaDireita = valor;
+			} else if ((valor - numeroDaDireita) < 0) {
+				n += valor * (-1);
+				numeroDaDireita = valor;
+			} else {
+				n += valor;
+				numeroDaDireita = valor;
+			}
+		}
+		return n;
 	}
 
 }
