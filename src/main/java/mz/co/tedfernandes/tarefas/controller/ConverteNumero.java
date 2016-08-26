@@ -2,7 +2,7 @@ package mz.co.tedfernandes.tarefas.controller;
 
 public class ConverteNumero {
 
-	public int converterNumeroRomano(char letra) {
+	public int converterCaraterRomano(char letra) {
 		switch (letra) {
 		case 'I':
 			return 1;
@@ -23,6 +23,11 @@ public class ConverteNumero {
 		default:
 			return 0;
 		}
+	}
+
+	public int converterNumeroRomano(String texto) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
