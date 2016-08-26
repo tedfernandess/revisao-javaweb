@@ -57,4 +57,14 @@ public class ConverterNumeroPageTest {
 		
 	}
 	
+	@Test
+	public void deveAceitarConverterNumeroRomanoComCaracteresMinusculos(){
+
+		this.numeroRomano.sendKeys("xxxviii");
+		this.numeroRomano.submit();
+		boolean achouTexto = driver.getPageSource().contains("38");
+		Assert.assertTrue(achouTexto);
+		
+	}
+	
 }
