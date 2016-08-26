@@ -27,4 +27,14 @@ public class ConverterNumeroPageTest {
 		this.driver.close();
 	}
 	
+	@Test
+	public void deveConverterNumeroDentroDosLimitesEstabelecidos(){
+		
+		this.numeroRomano.sendKeys("XIX");
+		this.numeroRomano.submit();
+		boolean achouTexto = driver.getPageSource().contains("19");
+		Assert.assertTrue(achouTexto);
+		
+	}
+	
 }
