@@ -9,8 +9,12 @@
 <body>
 
 	<div align="center">
-		<b>As regras:</b> <br /> <br />
-		<div style="width: 450px">
+		
+		<div style="width: 750px" align="left">
+			<b>As regras para a conversão de romano para decimal:</b> <br /> <br />
+		</div>
+		
+		<div style="width: 750px">
 			<table border="1" cellspacing="0" cellpadding="5">
 				<tr>
 					<td>Um número maior à frente de um número menor significa
@@ -25,28 +29,28 @@
 					</td>
 				</tr>
 				<tr>
-					<td>I - Corresponde ao numeral 1. II são dois, III são três,
+					<td><b>I -</b> Corresponde ao numeral 1. II são dois, III são três,
 						IV são 4 (ocasionalmente pode ver-se IIII como 4)</td>
 				</tr>
 				<tr>
-					<td>V - Corresponde ao numeral 5. IV são 4, VI são 6, VII são
+					<td><b>V -</b> Corresponde ao numeral 5. IV são 4, VI são 6, VII são
 						7, VIII são 8.</td>
 				</tr>
 				<tr>
-					<td>X - Corresponde ao numeral 10. IX são 9, XI é 11, etc..</td>
+					<td><b>X -</b> Corresponde ao numeral 10. IX são 9, XI é 11, etc..</td>
 				</tr>
 				<tr>
-					<td>L - Corresponde ao numeral 50. XL é o 40.</td>
+					<td><b>L -</b> Corresponde ao numeral 50. XL é o 40.</td>
 				</tr>
 				<tr>
-					<td>C - Corresponde ao numeral 100. C tem origem na palavra
+					<td><b>C -</b> Corresponde ao numeral 100. C tem origem na palavra
 						latina Centum.</td>
 				</tr>
 				<tr>
 					<td>Corresponde ao numeral 500.</td>
 				</tr>
 				<tr>
-					<td>M - Corresponde ao numeral 1000.</td>
+					<td><b>M -</b> Corresponde ao numeral 1000.</td>
 				</tr>
 				<tr>
 					<td>Uma linha sobre um numeral significa multiplicá-lo por

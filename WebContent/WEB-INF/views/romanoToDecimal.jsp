@@ -20,6 +20,10 @@
 		</form>
 		<br />
 	</div>
+	
+	<br>
+		<c:import url="regras.jsp"></c:import>
+	<br>
 
 	<br />
 	<marquee>
