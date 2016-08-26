@@ -2,10 +2,10 @@ package mz.co.tedfernandes.tarefas.model;
 
 public class ConverteNumero {
 
-	public int executaOperacao(String texto){
+	public int executaOperacao(String texto) {
 		return this.converterNumeroRomano(texto);
 	}
-	
+
 	private int converterCaraterRomano(char letra) {
 		switch (letra) {
 		case 'I':
@@ -39,14 +39,11 @@ public class ConverteNumero {
 				return 0;
 			}
 
-			if ((valor - numeroDaDireita) > 0) {
+			if ((valor - numeroDaDireita) >= 0) {
 				n += valor;
-				numeroDaDireita = valor;
-			} else if ((valor - numeroDaDireita) < 0) {
-				n += valor * (-1);
 				numeroDaDireita = valor;
 			} else {
-				n += valor;
+				n += valor * (-1);
 				numeroDaDireita = valor;
 			}
 		}
