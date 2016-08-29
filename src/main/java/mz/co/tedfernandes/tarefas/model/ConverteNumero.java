@@ -3,11 +3,30 @@ package mz.co.tedfernandes.tarefas.model;
 public class ConverteNumero {
 
 	public int executaOperacao(String texto) {
-		return this.converterNumeroRomano(texto.toUpperCase().trim());
+		return this.converterNumeroRomano(texto);
 	}
 
 	private int converterCaraterRomano(char letra) {
-		return (int) (Math.pow(10, "IXCM".indexOf(letra)) + 5 * (Math.pow(10, "VLD".indexOf(letra))));
+		switch (letra) {
+		case 'I':
+			return 1;
+		case 'X':
+			return 10;
+		case 'C':
+			return 100;
+		case 'M':
+			return 1000;
+
+		case 'V':
+			return 5;
+		case 'L':
+			return 50;
+		case 'D':
+			return 500;
+
+		default:
+			return 0;
+		}
 	}
 
 	private int converterNumeroRomano(String texto) {
@@ -29,11 +48,7 @@ public class ConverteNumero {
 				numeroDaDireita = valor;
 			}
 		}
-		if(n>3999 || n<=0){
-			throw new IllegalArgumentException();
-		}else{
-			return n;
-		}
+		return n;
 	}
 
 }
