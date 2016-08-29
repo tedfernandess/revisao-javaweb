@@ -1,5 +1,7 @@
 package mz.co.tedfernandes.tarefas.controller;
 
+import java.net.BindException;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
@@ -22,7 +24,7 @@ public class ConverteNumeroController {
 	}
 	
 	@RequestMapping("converter")
-	public String converter(HttpServletRequest request, Model model) {
+	public String converter(HttpServletRequest request, Model model, BindException erros) {
 		ConverteNumero converteNumero = new ConverteNumero();
 		String numeroRomano = request.getParameter("numeroRomano");
 		try{
