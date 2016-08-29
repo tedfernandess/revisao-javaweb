@@ -22,10 +22,6 @@
 		<br />
 	</div>
 
-	<br>
-	<c:import url="regras.jsp"></c:import>
-	<br>
-
 	<br />
 	<marquee>
 		<b>NOME:</b> Ted Nicolas António Fernandes ----- <b>Contato:</b> +258
